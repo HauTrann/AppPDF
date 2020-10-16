@@ -1,0 +1,3012 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>PerpetuumSoft.Charts</name>
+  </assembly>
+  <members>
+    <member name="T:PerpetuumSoft.Charts.AreaSeriesView">
+      <summary>Represents an object used to display series data in the form of area.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.AreaSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesView.CreateElementForSeries(PerpetuumSoft.Charts.ChartArea,PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AreaSeriesViewPoint[])">
+      <summary>Creates chart elements by series data.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.AreaSeriesViewBase">
+      <summary>Represents a base class for all classes representing series data in form of area.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesViewBase.GetSeriesValueType">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSeriesValueType" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.AreaSeriesViewBase.IsValueLegendItemSupported">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesViewBase.CreateElements(PerpetuumSoft.Charts.ChartArea)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.CreateElements(PerpetuumSoft.Charts.ChartArea)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesViewBase.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesViewBase.GetSideIndent">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesViewBase.CreateElementForSeries(PerpetuumSoft.Charts.ChartArea,PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AreaSeriesViewPoint[])">
+      <summary>Creates chart elements by series data.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesViewBase.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AreaSeriesViewBase.GetElement(PerpetuumSoft.Framework.Drawing.Vector[],System.Int32)">
+      <summary>Returns element, built by the assigned points subject to the specified palette index.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.AreaSeriesViewPoint">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ArgumentValuesMap">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Axis">
+      <summary>Represents the chart axis.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.StartPoint">
+      <summary>Gets the start point of the axis.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.StartFromZero">
+      <summary>Gets or sets a value that indicates whether the axis includes zero point.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.PerpendicularAxis">
+      <summary>Gets or sets an axis that is perpendicular to this axis.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.EndPoint">
+      <summary>Gets the end point of the axis.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.ValueToPercent(System.Double)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.ValueToPercent(System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.FromRealValue(System.Object)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.FromRealValue(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.ValueToBoundedCoordinate(System.Double)">
+      <summary>Returns coordinates of the point corresponding to the specified value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.GetValueFromSmartValue(PerpetuumSoft.Instrumentation.Model.SmartValue)">
+      <summary>Returns axis value corresponding to the specified SmartValue.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.IsDiscrete">
+      <summary>Implements <see cref="P:PerpetuumSoft.Instrumentation.Model.IScale.IsDiscrete" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.AxisIndent">
+      <summary>Sets axis end shift from the scale end.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.MaxValue">
+      <summary>Gets or sets a maximum value along this axis.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.Reverse">
+      <summary>Gets or sets a value that indicates whether start and end axis points is in reverse.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.BeginInit">
+      <summary>Implements <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.Margins">
+      <summary>Gets or sets margins of this element.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.ResetPerpendicularAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.PerpetuumSoft#Instrumentation#Model#IScale#Maximum">
+      <summary>Implements <see cref="P:PerpetuumSoft.Instrumentation.Model.IScale.Maximum" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.Direction">
+      <summary>Gets or sets axis direction.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.PointToValue(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.PointToValue(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.Colorizer">
+      <summary>Implements <see cref="P:PerpetuumSoft.Instrumentation.Model.IScale.Colorizer" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.MinValue">
+      <summary>Gets or sets a minimum value along this axis.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.OnParentChanged">
+      <summary>Overridden. See <see cref="'M:PerpetuumSoft.Instrumentation.Model.Element.OnParentChanged" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.ShouldSerializePerpendicularAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.ValueToPoint(System.Double,System.Double)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.ValueToPoint(System.Double,System.Double)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.CrossValue">
+      <summary>Gets or sets a value where this axis will cross over the axis determined in the 'PerpendicularAxis property.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.GetDiscreteValuesCount">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.GetDiscreteValuesCount" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.EndInit">
+      <summary>Implements <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.PerpetuumSoft#Instrumentation#Model#IScale#Minimum">
+      <summary>Implements <see cref="P:PerpetuumSoft.Instrumentation.Model.IScale.Minimum" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.DefaultLayer">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.ChartComposite.DefaultLayer" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.Calculate">
+      <summary>Overridden. See <see cref="'M:PerpetuumSoft.Instrumentation.Model.Element.Calculate" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.IsIncludePoint(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Returns value that indicates whether a point is placed between the start and the end points.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.AlignScaleElements">
+      <summary>Positions all axis elements taking into account the docking.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.GetObject(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.IExpressionSite.GetObject(System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Axis" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.PaintSelf(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.ChartComposite.PaintSelf(PerpetuumSoft.Framework.Model.PaintArguments)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.ResetIScaleElements">
+      <summary>Calls recalculation of all axis elements position.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Axis.Arrow">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.AxisArrow" /> object that determines shape drawing at the end point of the axis.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.PercentToValue(System.Double)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.PercentToValue(System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.ToRealValue(System.Double)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.ToRealValue(System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Axis.GetDiscreteValue(System.Int32)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScale.GetDiscreteValue(System.Int32)" />.</summary>
+    </member>
+    <member name="PerpetuumSoft.Charts.Axis.IsLogarithmic">
+      <summary>Implements <see cref="P:PerpetuumSoft.Instrumentation.Model.IScale.IsLogarithmic" />.</summary>
+    </member>
+    <member name="PerpetuumSoft.Charts.Axis.LogBase">
+      <summary>Implements <see cref="P:PerpetuumSoft.Instrumentation.Model.IScale.LogBase" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.AxisArrow">
+      <summary>Represents a the base class for drawing axis arrow shape.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisArrow.GetSize(PerpetuumSoft.Charts.AxisDirection)">
+      <summary>Returns size of arrow shape.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisArrow.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.AxisDirection,PerpetuumSoft.Framework.Drawing.Stroke,System.Boolean)">
+      <summary>Paints axis arrow shape.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.AxisDirection">
+      <summary>Enumerates the axis directions.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.AxisDirection.X">
+      <summary>Specifies the directions along the X axis in Cartesian coordinates.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.AxisDirection.Y">
+      <summary>Specifies the directions along the Y axis in Cartesian coordinates.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.AxisSeriesView">
+      <summary>Represent a base class for series view displaying series data with the use of coordinate axis.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.GetValuePosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetValuePosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.CalculateStackedValueBounds(PerpetuumSoft.Charts.Series[])">
+      <summary>Calculates values bounds for stacked series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.GetLabelPosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition,PerpetuumSoft.Framework.Drawing.Vector,System.Double)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetLabelPosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition,PerpetuumSoft.Framework.Drawing.Vector,System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.GetStartPoint(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.LabelsPosition,PerpetuumSoft.Framework.Drawing.Vector,System.Boolean,System.Double)">
+      <summary>Returns coordinates of the point that corresponds to the series' zero value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.PaintLegendMarkers(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector,System.Int32)">
+      <summary>Paints a marker in a legend for the series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.GetValuePoint(PerpetuumSoft.Charts.Segment,PerpetuumSoft.Charts.LabelsPosition)">
+      <summary>Returns coordinates of the point that corresponds to the specified value and label position.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.GetSegmentBySeriesValue(PerpetuumSoft.Charts.SeriesValueBase)">
+      <summary>Returns a segment that corresponds to the series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.CreateArgumentValuesMap(PerpetuumSoft.Charts.Series[])">
+      <summary>Creates a Hashtable that contains information on values of the series arguments and the corresponding series values. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.ClearSeriesValueRectangles">
+      <summary>Clears the segments of the series values. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.GetSeriesValueType">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSeriesValueType" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.CalculateStacked100ValueBounds(PerpetuumSoft.Charts.Series[])">
+      <summary>Calculates values bounds for stacked100 series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.AxisSeriesView.AddSeriesValueSegment(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.Segment)">
+      <summary>Adds a segment that corresponds to the specified value of the series.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.AxisType">
+      <summary>Enumerates the destination of the used axis.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.AxisType.Argument">
+      <summary>Specifies that the axis will be used for arguments.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.AxisType.Value">
+      <summary>Specifies that the axis will be used for values.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.BarSeriesView">
+      <summary>Represents a series view to display series data in the form of bars.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.BarSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesView.CreateElements(PerpetuumSoft.Charts.ArgumentValuesMap,PerpetuumSoft.Charts.ChartArea)">
+      <summary>Creates chart elements by series data.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesView.GetStartValue(PerpetuumSoft.Charts.Series,PerpetuumSoft.Instrumentation.Model.SmartValue)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.BarSeriesViewBase">
+      <summary>Represent a base class for series view representing series data in the form of bars.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesViewBase.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.BarSeriesViewBase.IsValueLegendItemSupported">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesViewBase.CreateElements(PerpetuumSoft.Charts.ChartArea)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.CreateElements(PerpetuumSoft.Charts.ChartArea)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesViewBase.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesViewBase.GetElement(PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Double)">
+      <summary>Returns an element that corresponds to the specified area and value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.BarSeriesViewBase.ViewType">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.ViewType" /> object that determines kind of Bars.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.BarSeriesViewBase.ColumnImage">
+      <summary>Gets or sets <see cref="T:System.Drawing.Image" /> which sets the image drawn in the column.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesViewBase.GetElement(PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Double,System.Int32)">
+      <summary>Returns an element that corresponds to the specified area, value and the number in the palette.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesViewBase.CreateElements(PerpetuumSoft.Charts.ArgumentValuesMap,PerpetuumSoft.Charts.ChartArea)">
+      <summary>Creates chart elements by series data.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.BarSeriesViewBase.AreaWidth">
+      <summary>Gets or sets the ratio between the width of the occupied Bars and the available space.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.BarSeriesViewBase.GetSideIndent">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.BarSeriesViewBase.ImageSizeMode">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.ImageSizeMode" /> which sets zoom mode for the image displayed in the column.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.BarSeriesViewBase.StartValue">
+      <exclude>Gets or sets</exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Bounds">
+      <summary>Represents the double value bounds.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Bounds.Union(System.Double)">
+      <summary>Expands bounds in order to include the specified value. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Bounds.Max">
+      <summary>Gets maximum value in these bounds.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Bounds.Empty">
+      <summary>Gets empty bounds.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Bounds.#ctor(System.Double)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Bounds" />, this bound includes one value specified by a given parameter.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Bounds.Min">
+      <summary>Gets minimum value in these bounds.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Bounds.IsEmpty">
+      <summary>Gets value that indicates that the range is empty.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Bounds.Union(PerpetuumSoft.Charts.Bounds)">
+      <summary>Unites these bounds with the specified ones.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Bounds.#ctor(System.Double,System.Double)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Bounds" /> class that intializes this bound min and max value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Bounds.GetUnion(System.Double)">
+      <summary>Returns new bounds expanded such a way to include the specified value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Bounds.GetUnion(PerpetuumSoft.Charts.Bounds)">
+      <summary>Returns new bounds as a result of these bounds and the bounds specified by parameters.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Bounds.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Bounds.Length">
+      <summary>Gets bounds length.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.CandleStickSeriesView">
+      <summary>Represents series view for series data painted in the form of the candle stick chart.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CandleStickSeriesView.ReductionColor">
+      <summary>Gets or sets color of elements displaying reducing values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CandleStickSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CandleStickSeriesView.LineWidth">
+      <summary>Gets or sets lines width.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CandleStickSeriesView.Color">
+      <summary>Gets or sets color of elements displaying increasing values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CandleStickSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.CandleStickSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CandleStickSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CandleStickSeriesView.CreateElement(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.FinancialSeriesValue,System.Boolean)">
+      <summary>Creates chart elements by series values.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Chart">
+      <summary>Represents a chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Chart.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Chart" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Chart.EndInit">
+      <summary>Implements <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Chart.GetCategoryTypes">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Chart.BeginInit">
+      <summary>Implements <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Chart.CreateChartDesignerForm">
+      <summary>Creates chart designer form with the specific settings.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Chart.Calculate">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Chart.DataChanged">
+      <summary>Indicates that the data in the chart source have been changed. Leads to the chart renewal.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ChartArea">
+      <summary>Represents chart area for the series painting.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.PaintingArea">
+      <summary>Gets an area to which series are painted.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.Margins">
+      <summary>Gets or sets area margins.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.MakeStatic">
+      <summary>Modifies a chart such way that it contains the current series values independently of the data source.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.PaintContext">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.ChartPaintContext" /> the context for a chart drawing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.Dock">
+      <summary>Gets or sets docking style.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.DrawContent(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Draws the content of this element.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.Calculate">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.ChartArea.Calculate" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.BeginInit">
+      <summary>Implements <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.GetAxes">
+      <summary>Returns all axes included in the ChartArea.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.Palette">
+      <summary>Gets or sets palette used by series included into this ChartArea.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.ChildElementRemoved(PerpetuumSoft.Instrumentation.Model.Element)">
+      <summary>Occurs when the child element is removed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.ShouldSerializePrimaryValueAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.PrimaryValueAxis">
+      <summary>Gets or sets the primary axis on which the values are placed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.Error">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.EndInit">
+      <summary>Implements <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartArea.PrimaryArgumentAxis">
+      <summary>Gets or sets the primary axis on which the arguments are placed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.ChartArea" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.GetSeries">
+      <summary>Returns all axes included in the ChartArea.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.GetPrimaryAxis(PerpetuumSoft.Charts.AxisDirection)">
+      <summary>Returns the primary axis by the specified direction. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.ShouldSerializePrimaryArgumentAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartArea.GetElementAt(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.IElement.GetElementAt(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ChartAreaDockStyle">
+      <summary>Enumerates dock style for chart area.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartAreaDockStyle.None">
+      <summary>Specifies lack of the docking.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartAreaDockStyle.Client">
+      <summary>Specifies docking to the whole client region.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ChartComposite">
+      <summary>Represents a base class for charts constituents.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartComposite.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IChartElement.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartComposite.PaintSelf(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Paints the element itself without the nested elements.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ChartComposite.DefaultLayer">
+      <summary>Gets default drawing layer.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartComposite.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IChartElement.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ChartLayer">
+      <summary>Enumeretes layers to which chart elements are painted.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.GridLinesBackGround">
+      <summary>Specifies a layer for the background of the grid lines painting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.Background">
+      <summary>Specifies a layer for the background painting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.Axis">
+      <summary>Specifies a layer for axes painting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.Foreground">
+      <summary>Specifies a layer for the foreground painting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.SeriesMarkers">
+      <summary>Specifies a layer for the series markers painting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.SeriesValues">
+      <summary>Specifies a layer for the series values painting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.Series">
+      <summary>Specifies a layer for the series painting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ChartLayer.GridLines">
+      <summary>Specifies a layer for grid lines painting.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ChartPaintContext">
+      <summary>Defines the context to draw chart series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartPaintContext.Clear">
+      <summary>Clears the context.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartPaintContext.IsSeriesPainted(PerpetuumSoft.Charts.Series)">
+      <summary>Returns a value that defines whether the specified series has been already painted.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartPaintContext.AddSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Adds the painted series to the context.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ChartPaintContext.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.ChartPaintContext" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ColoredPalette">
+      <summary>Represents a base class for multicolored palettes.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ColoredPalette.GetColors">
+      <summary>Returns palette array of colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ColoredPalette.GetColor(System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetColor(System.Int32)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.CubicSplineInterpolation">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.CustomPalette">
+      <summary>Represents the user defined palette.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPalette.GetColor(System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetColor(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPalette.GetShape(System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetShape(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPalette.GetLineStroke(System.Drawing.Color,System.Double,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetLineStroke(System.Drawing.Color,System.Double,System.Int32)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CustomPalette.Items">
+      <summary>Gets custom palette items.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPalette.GetFill(System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetFill(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPalette.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.CustomPalette" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.CustomPaletteItem">
+      <summary>Represents information on the palette's element settings.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CustomPaletteItem.Stroke">
+      <summary>Determines the palette stroke.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItem.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.CustomPaletteItem" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CustomPaletteItem.Shape">
+      <summary>Determines the palette shape.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItem.Clone">
+      <summary>Implements <see cref="M:System.ICloneable.Clone" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CustomPaletteItem.Fill">
+      <summary>Determines the palette Fill object.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CustomPaletteItem.Color">
+      <summary>Determines the palette color.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.CustomPaletteItemCollection">
+      <summary>Represents collection of CustomPaletteItem objects.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.IndexOf(PerpetuumSoft.Charts.CustomPaletteItem)">
+      <summary>Implements <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.OnInsertComplete(System.Int32,System.Object)">
+      <summary>Performs additional custom processes after adding an element to the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.OnRemoveComplete(System.Int32,System.Object)">
+      <summary>Performs additional custom processes after removing an element from the collection.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Charts.CustomPaletteItemCollection.CustomPaletteItemCollectionChanged">
+      <summary>Occurs when collection is changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.Contains(PerpetuumSoft.Charts.CustomPaletteItem)">
+      <summary>Implements <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.Add(PerpetuumSoft.Charts.CustomPaletteItem)">
+      <summary>Implements <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.AddRange(PerpetuumSoft.Charts.CustomPaletteItem[])">
+      <summary>Add elements to the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.Remove(PerpetuumSoft.Charts.CustomPaletteItem)">
+      <summary>Implements <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.Insert(System.Int32,PerpetuumSoft.Charts.CustomPaletteItem)">
+      <summary>Implements <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.CustomPaletteItemCollection.Item(System.Int32)">
+      <summary>Implements <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.CustomPaletteItemCollection.#ctor">
+      <summary>Initializes a new instance of the  <see cref="T:PerpetuumSoft.Charts.CustomPaletteItemCollection" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.DataBindingException">
+      <summary>Data Binding Exception</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.DataBindingException.#ctor(System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.DataBindingException" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.DataProvider">
+      <summary>Defines the data provider for chart series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.DataProvider.GetSeriesValueCollections">
+      <summary>Returns collections of series values.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.AxisConverter">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.AxisDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.ChartAreaDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.DataSourceConverter">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.DesignSeriesBindingPropertyDescriptor">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.DesignSeriesBindingPropertyTab">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.GridLinesDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.InternalExpressionDataService">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.LegendDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.ObjectSeriesValueBasePropertyConverter">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.PaletteTypeEditor">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.PerpendicularAxisConverter">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.RectangleCompositeDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.SeriesDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.SeriesSplitterExpressionDataService">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.TitleDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.TypeExpressionSerivice">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.ValueLabelFormulaEditor">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.ValueLabelsDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Design.ValueMarkersDesigner">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.DisplayingInLegendType">
+      <summary>Enumereates types of the legend display.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DisplayingInLegendType.None">
+      <summary>Indicates that the display type of the legend is not specified.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DisplayingInLegendType.Series">
+      <summary>Defines legend display type by series.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DisplayingInLegendType.Values">
+      <summary>Defines legend display type by series value.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.DockingStyle">
+      <summary>Enumerates docking styles for chart elements.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DockingStyle.Outside">
+      <summary>Indicates that an element is placed outside the area.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DockingStyle.Inside">
+      <summary>Indicates that an element is placed inside the area.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.DockingType">
+      <summary>Enumerates docking type of the chart elements which are inside another element.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DockingType.Top">
+      <summary>Assigns the top position.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DockingType.None">
+      <summary>Indicates that the postion is not assigned.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DockingType.Bottom">
+      <summary>Assigns the bottom position.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DockingType.Left">
+      <summary>Assigns the left position.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.DockingType.Right">
+      <summary>Assigns the right position.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.EmptyAxisArrow">
+      <summary>Defines an empty shape for an axis arrow.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.EmptyAxisArrow.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.AxisDirection,PerpetuumSoft.Framework.Drawing.Stroke,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.AxisArrow.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.AxisDirection,PerpetuumSoft.Framework.Drawing.Stroke,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.EmptyAxisArrow.GetSize(PerpetuumSoft.Charts.AxisDirection)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.AxisArrow.GetSize(PerpetuumSoft.Charts.AxisDirection)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.EmptyAxisArrow.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.EmptyAxisArrow" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.FinancialSeriesValue">
+      <summary>Specifies a base class for the series values used in financial charts.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesValue.GetValueBounds">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.GetValueBounds" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.FinancialSeriesValue.Hi">
+      <summary>Gets or sets the Hi value for financial SeriesValue.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesValue.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesValue.GetRepresentationObject">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.GetRepresentationObject" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesValue.Sum(PerpetuumSoft.Charts.SeriesValueBase)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.Sum(PerpetuumSoft.Charts.SeriesValueBase)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.FinancialSeriesValue.Close">
+      <summary>Gets or sets the Close value for financial SeriesValue.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.FinancialSeriesValue.Open">
+      <summary>Gets or sets the Open value for financial SeriesValue.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesValue.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.FinancialSeriesValue" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.FinancialSeriesValue.Lo">
+      <summary>Gets or sets the Lo value for financial SeriesValue.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.FinancialSeriesViewBase">
+      <summary>Defines a base class for painting of the series values in the form of a financial chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesViewBase.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.FinancialSeriesViewBase.ReductionValue">
+      <summary>Gets or sets a value which indicates according to which field the values with the reduced index will be chosen.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesViewBase.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesViewBase.CreateElementsForSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Creates elements which correspond to the specified series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesViewBase.CreateElement(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.FinancialSeriesValue,System.Boolean)">
+      <summary>Creates an element that corresponds to this series value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.FinancialSeriesViewBase.IsValueLegendItemSupported">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.FinancialSeriesViewBase.Width">
+      <summary>Gets or sets relational width of the element which corresponds to the series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesViewBase.GetSeriesValueType">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSeriesValueType" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesViewBase.GetReductionValueForSeriesValue(PerpetuumSoft.Charts.FinancialSeriesValue)">
+      <summary>Returns the value field of the financial series with the specified reduction value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.FinancialSeriesViewBase.GetSideIndent">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.GridLines">
+      <summary>Determines the grid lines of chart axis.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.Divisions">
+      <summary>Gets or sets the number of the grid lines.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.GridLines.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IChartElement.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.GridLines.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.SubStroke">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Stroke" /> for sub lines drawing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.UseDescreteValues">
+      <summary>Gets or sets a value that indicates whether the grid lines go through descrete values on the axis.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.GridLines.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.GridLines.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IChartElement.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.MaxLimit">
+      <summary>Gets or sets maximum value within which grid lines are painted.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.SubLinesCount">
+      <summary>Gets or sets the number of the sub lines between the primary lines.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.AlternativeFill">
+      <summary>Gets or sets the fill for interleaved stripes between grid lines.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.MinLimit">
+      <summary>Gets or sets minimum value within which grid lines are painted.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.GridLines.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.GridLines" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.Step">
+      <summary>Gets or sets a step betwwen the grid lines.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.UseRoundValues">
+      <summary>Gets or sets value that indicates if grid lines will correspond to round values.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.Axis">
+      <summary>Gets the axis for which the data of the grid line are painted.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.GridLines.Origin">
+      <summary>Gets or sets axial point where the grid line should pass through. </summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.IChartElement">
+      <summary>Defines methods of a chart element drawing to the specified layer.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.IChartElement.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Returns an element of the specified layer to which the specified point belongs.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.IChartElement.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Paints an element to the particular layer.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.IDockable">
+      <summary>Defines methods for element docking.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.IDockable.DockingType">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.DockingType" /> docking type.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.IDockable.GetSize">
+      <summary>Returns element's size.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.IDockable.DockingStyle">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.DockingStyle" /> docking style.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.IDockable.SetBounds(PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Specifies an area where an element is placed.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ImageSizeMode">
+      <summary>Enumerates image sizing modes.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ImageSizeMode.Scale">
+      <summary>Determines image sizing in proportions.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ImageSizeMode.Stretch">
+      <summary>Determines image stretch.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LabelsPosition">
+      <summary>Enumerates types of label positions.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.LabelsPosition.Bottom">
+      <summary>Specifies the bottom position.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.LabelsPosition.Top">
+      <summary>Specifies the top position.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.LabelsPosition.Center">
+      <summary>Specifies the center position.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Legend">
+      <summary>Indicates chart legend.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.DockingType">
+      <summary>Implements <see cref="P:PerpetuumSoft.Charts.IDockable.DockingType" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Legend.SetBounds(PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IDockable.SetBounds(PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.ColumnsCount">
+      <summary>Determines the count of columns.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.ItemCount">
+      <summary>Gets a number of the legend items.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Legend.OnBoundsChanged">
+      <summary>Occurs when the Bounds property has been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Legend.GetSize">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IDockable.GetSize" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.DockingStyle">
+      <summary>Implements <see cref="P:PerpetuumSoft.Charts.IDockable.DockingStyle" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Legend.Calculate">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.Calculate" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Legend.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Legend" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Legend.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.Margins">
+      <summary>Gets or sets margins of this element.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.Font">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.FontDescriptor" /> font for legend facing.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Legend.OnVisibleChanged">
+      <summary>Occurs when the Visible property has been changed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.Padding">
+      <summary>Gets or sets padding of this element.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.LegendType">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.LegendType" /> legend type.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.BadgeIndent">
+      <summary>Determines indent between legend badge and item text.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.TextFill">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Fill" /> fill for the legend facing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.Alignment">
+      <summary>Gets or sets alignment.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Legend.ItemMargins">
+      <summary>Gets or sets margins for legend points.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LegendItem">
+      <summary>Defines a base class for an item in the chart legend.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.RowNumber">
+      <summary>Determines the row number of the LegenItem.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendItem.GetBadgeSize">
+      <summary>Returns badge size.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.StartPoint">
+      <summary>Gets or sets the coordinates of the left-up corner of the LegendItem.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendItem.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream)">
+      <summary>Paint a legend item.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.ColumnNumber">
+      <summary>Determines the column numder of the LegenItem.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendItem.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Paints a legend item.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.Fill">
+      <summary>Gets or sets the fill used for drawing.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendItem.GetSize">
+      <summary>Returns the size of a legend item.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.Series">
+      <summary>Gets or sets legend series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendItem.PaintBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Paints the badge for this item.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.Text">
+      <summary>Gets a text displayed in a legend item.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendItem.OnLegendItemChanged">
+      <summary>Occures when a legend item has been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendItem.GetTextSize">
+      <summary>Returns text size.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.ExpressionString">
+      <summary>Gets or sets an expression to calculate a value that is displayed in the legend item.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendItem.Legend">
+      <summary>Determines the specified legend.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LegendSeriesItem">
+      <summary>Defines a legend item to indicate series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendSeriesItem.GetObject(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.IExpressionSite.GetObject(System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendSeriesItem.PaintBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.LegendItem.PaintBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendSeriesItem.GetFunction(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.IExpressionSite.GetFunction(System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendSeriesItem.#ctor(PerpetuumSoft.Charts.Legend,PerpetuumSoft.Charts.Series)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.LegendSeriesItem" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendSeriesItem.Text">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.LegendItem.Text" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LegendType">
+      <summary>Enumerates type of the legend items position.  </summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.LegendType.Verical">
+      <summary>Indicates that the legend items are placed vertically.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.LegendType.Horisontal">
+      <summary>Indicates that the legend items are placed horizontally.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LegendValuesItem">
+      <summary>Represents a legend element that corresponds to the series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendValuesItem.PaintBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.LegendItem.PaintBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendValuesItem.Text">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.LegendItem.Text" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendValuesItem.GetObject(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.IExpressionSite.GetObject(System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendValuesItem.GetFunction(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.IExpressionSite.GetFunction(System.String)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LegendValuesItem.Index">
+      <summary>Returns an index of the corresponding series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LegendValuesItem.#ctor(PerpetuumSoft.Charts.Legend,System.Int32,PerpetuumSoft.Charts.Series)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.LegendValuesItem" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LevelSeriesView">
+      <summary>Represents series view to display series data in the form of the Level.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.LevelSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <exclude>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</exclude>
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.GetElement(PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Double,System.Int32)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.ViewType">
+      <exclude>Gets or sets <see cref="T:PerpetuumSoft.Charts.ViewType" /></exclude>
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.ViewType" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.CreateElements(PerpetuumSoft.Charts.ArgumentValuesMap,PerpetuumSoft.Charts.ChartArea)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <exclude>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</exclude>
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.Fill">
+      <exclude>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Fill" /></exclude>
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Fill" /></summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.AciveLayer">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties" /> for the top layer of the Level element.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.Smooth">
+      <exclude>Gets or sets <see cref="T:System.Boolean" /></exclude>
+      <summary>Gets or sets <see cref="T:System.Boolean" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <exclude>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</exclude>
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.InaciveLayer">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties" /> for the bottom layer of the Level element.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties">
+      <summary>Represents properties for the top and bottom layers of the Level.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.Divisions">
+      <summary>Gets or sets a value that indicates the count of the divisions on the Level.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.StartCap">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Instrumentation.Model.CapStyle" /> style of the Start Level element painting</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.StartColor">
+      <summary>Gets or sets <see cref="T:System.Drawing.Color" /> of the start Level element painting.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.EndColor">
+      <summary>Gets or sets <see cref="T:System.Drawing.Color" /> of the end Level element painting.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.Effect3D">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Instrumentation.Model.Effect3D" /> style of the Level element painting.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.Colors">
+      <summary>Gets <see cref="T:PerpetuumSoft.Instrumentation.Model.Drawing.ColorSectionCollection" />. This collection represents the colors that will be used for the Level element painting.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.DivisionsStroke">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Stroke" /> for the Divisions drawing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.EndCap">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Instrumentation.Model.CapStyle" /> style of end Level element painting.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LevelSeriesView.LevelProperties.System#ICloneable#Clone">
+      <summary>Implements <see cref="M:System.ICloneable.Clone" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LineAxisArrow">
+      <summary>Represents an axel end in the form of a line.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LineAxisArrow.Length">
+      <summary>Gets or sets the length of an axel end.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineAxisArrow.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.LineAxisArrow" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineAxisArrow.GetSize(PerpetuumSoft.Charts.AxisDirection)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.AxisArrow.GetSize(PerpetuumSoft.Charts.AxisDirection)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineAxisArrow.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.AxisDirection,PerpetuumSoft.Framework.Drawing.Stroke,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.AxisArrow.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.AxisDirection,PerpetuumSoft.Framework.Drawing.Stroke,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineAxisArrow.#ctor(System.Double)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.LineAxisArrow" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LineSeriesView">
+      <summary>Represents SeriesView to display series data in the form of the broken line.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesView.CreateElementsForSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Creates elements which correspond to the specified series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.LineSeriesView" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.LineSeriesViewBase">
+      <summary>Determines a base class for a lenear chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesViewBase.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LineSeriesViewBase.IsValueLegendItemSupported">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesViewBase.GetLineSeriesViewStroke(System.Int32)">
+      <summary>Returns the Stroke taking into account the specified palette.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesViewBase.GetSideIndent">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LineSeriesViewBase.DefaultColor">
+      <summary>'Gets or sets default line color.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LineSeriesViewBase.DefaultLineWidth">
+      <summary>Gets or sets default line width.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesViewBase.CreateElement(PerpetuumSoft.Charts.Series,PerpetuumSoft.Framework.Drawing.Vector[])">
+      <summary>Creates an element that represents a chart by the corresponding points.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.LineSeriesViewBase.DefaultLineStyle">
+      <summary>'Gets or sets default line style.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesViewBase.GetSeriesValueType">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSeriesValueType" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.LineSeriesViewBase.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.NamedSeriesValueCollection">
+      <summary>Defines the named series value collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.NamedSeriesValueCollection.#ctor(PerpetuumSoft.Charts.SeriesValueCollection,System.Object)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.NamedSeriesValueCollection" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.NamedSeriesValueCollection.Key">
+      <summary>Gets a name, key of the series value collection.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.NamedSeriesValueCollection.Collection">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.SeriesValueCollection" /> the collection of the series value.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Palette">
+      <summary>Defines a base class for the palette used for series elements painting.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Palette.OnPaletteChanged">
+      <summary>Raises the <see cref="E:PerpetuumSoft.Charts.Palette.PaletteChanged" /> event.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Palette.GetFill(System.Int32)">
+      <summary>Returns of the fills available by its index.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Charts.Palette.PaletteChanged">
+      <summary>Occurs after the palette has been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Palette.GetShape(System.Int32)">
+      <summary>Returns one of shapes available by its index.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Palette.GetLineStroke(System.Drawing.Color,System.Double,System.Int32)">
+      <summary>Returns one of the strokes available with the specified color and lines width by its index.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Palette.GetColor(System.Int32)">
+      <summary>Returns one of the colors available by its index.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteBlackAndWhite">
+      <summary>Represents black-and-white palette.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteBlackAndWhite.GetColor(System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetColor(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteBlackAndWhite.GetFill(System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetFill(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteBlackAndWhite.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteBlackAndWhite" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteBlue">
+      <summary>Represents palette that uses blue colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteBlue.GetColors">
+      <summary>Returns palette array of colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteBlue.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteBlue" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteChemical">
+      <summary>Represents a palette which contains grey and green color tones.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteChemical.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteChemical" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteChemical.GetColors">
+      <summary>Gets palette colors.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteCold">
+      <summary>Represents palette that uses cold colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteCold.GetColors">
+      <summary>Returns palette array of colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteCold.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteCold" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteContrast">
+      <summary>Indicates palette for contrast painting of the series elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteContrast.GetColors">
+      <summary>Returns the color.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteContrast.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteContrast" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteEmpty">
+      <summary>Indicates empty palette for series elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteEmpty.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteEmpty" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteEmpty.GetColors">
+      <summary>Returns the color.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteGray">
+      <summary>Indicates palette to paint series elements in gray.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteGray.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteGray" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteGray.GetColors">
+      <summary>Returns the color.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteGreen">
+      <summary>Indicates palette to paint series elements in green.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteGreen.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteGreen" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteGreen.GetColors">
+      <summary>Returns the color.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteHot">
+      <summary>Represents palette that uses warm colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteHot.GetColors">
+      <summary>Returns palette array of colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteHot.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteHot" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteLightBlue">
+      <summary>Represents a palette which contains light blue color tones.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteLightBlue.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteLightBlue" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteLightBlue.GetColors">
+      <summary>Gets palette colors.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteOrange">
+      <summary>Represents a palette which contains orange color tones.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteOrange.GetColors">
+      <summary>Gets palette colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteOrange.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteOrange" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PalettePurple">
+      <summary>Represents a palette which contains purple color tones.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PalettePurple.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PalettePurple" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PalettePurple.GetColors">
+      <summary>Gets palette colors.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteRainbow">
+      <summary>Indicates palette to paint series elements in rainbow colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteRainbow.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteRainbow" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteRainbow.GetColors">
+      <summary>Returns the color.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteRed">
+      <summary>Indicates palette for painting series elements in red.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteRed.GetColors">
+      <summary>Returns the color.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteRed.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteRed" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PaletteSunset">
+      <summary>Represents a palette which contains purple and orange color tones.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteSunset.GetColors">
+      <summary>Gets palette colors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PaletteSunset.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PaletteSunset" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PieSeriesDrawingStyle">
+      <summary>Enumerates the series elements drawing effect types in the form of pie.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PieSeriesDrawingStyle.SoftEdge">
+      <summary>Determines the soft edge effect.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PieSeriesDrawingStyle.Concave">
+      <summary>Determines the concavity effect.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PieSeriesDrawingStyle.None">
+      <summary>Determines absence of the effect.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PieSeriesPlacingType">
+      <summary>Enumereates cross placing type of series which are presented by charts of the Pie type.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PieSeriesPlacingType.Inside">
+      <summary>Specifies the position inside each other.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PieSeriesPlacingType.Vertical">
+      <summary>Specifies vertical position.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PieSeriesPlacingType.Horisontal">
+      <summary>Specifies horizontal position.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PieSeriesValue">
+      <summary>Indicates series values for the Pie series type.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesValue.#ctor(System.String,System.Double,PerpetuumSoft.Framework.Drawing.Fill)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PieSeriesValue" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesValue.#ctor(System.Double,System.Double,PerpetuumSoft.Framework.Drawing.Fill)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PieSeriesValue" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesValue.Shift">
+      <summary>Gets or sets the value that assigns shift range of a segment.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesValue.Fill">
+      <summary>Gets or sets the fill to paint the Pie segment.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesValue.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesValue.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PieSeriesValue" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PieSeriesView">
+      <summary>Defines series view to present series data in the form of the Pie.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesView.Radius">
+      <summary>Gets or sets pie radius.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesView.StartAngle">
+      <summary>Gets or sets pie start angle.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesView.PlacingType">
+      <summary>Gets or sets cross placing type of several pies for different series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.CreateElements(PerpetuumSoft.Charts.ChartArea)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.CreateElements(PerpetuumSoft.Charts.ChartArea)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetLabelPosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition,PerpetuumSoft.Framework.Drawing.Vector,System.Double)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetLabelPosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition,PerpetuumSoft.Framework.Drawing.Vector,System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetValuePosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetValuePosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetSideIndent">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.ClearSeriesValueRingSectors">
+      <summary>Clears the set of the series sectors.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PieSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.AddSeriesValueRingSector(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Instrumentation.Model.RingSector)">
+      <summary>Adds a RingSector that represents the specified series value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesView.InternalRadius">
+      <summary>Gets or sets pie internal radius.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.CreateElementsBySeries(PerpetuumSoft.Charts.ChartPaintContext,PerpetuumSoft.Charts.Series,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Creates elements of the specified series by taking into account the specified area.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetRingSector(PerpetuumSoft.Framework.Drawing.Vector,System.Double,System.Double,System.Double,PerpetuumSoft.Charts.SeriesValue)">
+      <summary>Returns a sector by taking into account the specified radius that represents the specified value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetRingSectorCenter(PerpetuumSoft.Framework.Drawing.Vector,System.Double,System.Double,System.Double,System.Double)">
+      <summary>Returns the center of the RingSector by taking into account the specified parameters.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetRingSectorBySeriesValue(PerpetuumSoft.Charts.SeriesValueBase)">
+      <summary>Returns a sector for the specified series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetElementsBySeries(PerpetuumSoft.Charts.Series,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Returns element array that represents the specified series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PieSeriesView.GetSeriesValueType">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSeriesValueType" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesView.DrawingStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.PieSeriesDrawingStyle" /> which represents series elements drawing style.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PieSeriesView.IsValueLegendItemSupported">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PointSeriesDrawingStyle">
+      <summary>Enumerates the series elements drawing effect types in the form of points.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PointSeriesDrawingStyle.None">
+      <summary>Determines absence of the effect.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PointSeriesDrawingStyle.Concave">
+      <summary>Determines the concavity effect.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.PointSeriesDrawingStyle.SoftEdge">
+      <summary>Determines the soft edge effect.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PointSeriesValue">
+      <summary>Defines series data displaying in the form of points.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesValue.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PointSeriesValue" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PointSeriesValue.Radius">
+      <summary>Gets or sets points radius.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesValue.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesValue.#ctor(System.String,System.Double,System.Double)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PointSeriesValue" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PointSeriesView">
+      <summary>Defines series view to display series data in the form of points.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.GetElementAtValue(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.SeriesValue,System.Double,System.Double)">
+      <summary>Returns an element that represents the specified series value by taking into account the specified minimum and maximum radiuses.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.CreateElementsForSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Creates elements that represent a chart by the specified series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PointSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PointSeriesView.MinRadius">
+      <summary>Gets or sets minimum radius of the points.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PointSeriesView.IsValueLegendItemSupported">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PointSeriesView.DrawingStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.PointSeriesDrawingStyle" /> which represents the series elements drawing style.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PointSeriesView.MaxRadius">
+      <summary>Gets or sets maximum radius of the points.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.GetSeriesValueType">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSeriesValueType" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PointSeriesView.GetSideIndent">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PolygonElement">
+      <summary>Defines the Polygon element.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolygonElement.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PolygonElement" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolygonElement.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolygonElement.GetBoundedBox">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.IElement.GetBoundedBox" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolygonElement.#ctor(PerpetuumSoft.Framework.Drawing.Vector[])">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PolygonElement" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolygonElement.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PolylineElement">
+      <summary>Defines the PolyLine element.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolylineElement.#ctor(PerpetuumSoft.Framework.Drawing.Vector[])">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PolylineElement" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolylineElement.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolylineElement.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PolylineElement" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolylineElement.IsIncludePoint(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Returns a value that indicates whether the specified point is included into the area outlined by this line.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolylineElement.GetBoundedBox">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.IElement.GetBoundedBox" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PolylineElement.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PseudoBar">
+      <summary>Represents a chart element in the form of the pseudo 3D parallelepiped.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoBar.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoBar.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoBar.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PseudoBar" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoBar.#ctor(PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Drawing.Color,System.Double,System.Double)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PseudoBar" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PseudoCylinder">
+      <summary>Represents a chart element in the form of the pseudo 3D cylinder.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoCylinder.#ctor(PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Drawing.Color,System.Boolean)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PseudoCylinder" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoCylinder.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PseudoCylinder.IsVertical">
+      <summary>Gets or sets a value that indicates whether the cylinder is palced vertically.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoCylinder.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoCylinder.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.PseudoCylinder" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.PseudoElement">
+      <summary>Represents a base class for pseudo 3D chart elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoElement.GetModifiedStroke(PerpetuumSoft.Framework.Drawing.Stroke,System.Double)">
+      <summary>Returns the Stroke that is created by the specified lines type and coefficient.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoElement.GetModifiedColor(PerpetuumSoft.Framework.Drawing.Fill,System.Double)">
+      <summary>Returns color that is created by the specified color and coefficient.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.PseudoElement.GetModifiedColor(System.Drawing.Color,System.Double)">
+      <summary>Returns color that is created by the specified fill and coefficient.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PseudoElement.Color">
+      <summary>Gets or sets element's color.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PseudoElement.Fill">
+      <summary>Gets or sets element's fill.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.PseudoElement.Area">
+      <summary>Gets or sets an area occupied by an element.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.RectangleComposite">
+      <summary>Represents a rectangle as a composite element; a base class for the composite elements with the rectangular area.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.RectangleComposite.Bounds">
+      <summary>Gets or sets bounds of the area occupied by an element.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.RectangleComposite.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.RectangleComposite.GetBoundedBox">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.IElement.GetBoundedBox" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.RectangleComposite.Center">
+      <summary>Gets or sets the center of the rectangle.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.RectangleComposite.GetElementAt(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.IElement.GetElementAt(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.RectangleComposite.DrawContent(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Paints content of the rectabgular area. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.RectangleComposite.Size">
+      <summary>Gets or sets the size of the rectangle.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ReductionValue">
+      <summary>Represents values by which the reduction of the financial series values is specified.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ReductionValue.Hi">
+      <summary>Indicates that the reduction of the series values is determined by the Hi field.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ReductionValue.Lo">
+      <summary>Indicates that the reduction of the series values is determined by the Lo field.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ReductionValue.Open">
+      <summary>Indicates that the reduction of the series values is determined by the Open field.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ReductionValue.Close">
+      <summary>Indicates that the reduction of the series values is determined by the Close field.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ScaleType">
+      <summary>Enumerates scale types.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ScaleType.Numerical">
+      <summary>Corresponds to the numerical scale type.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ScaleType.Qualitative">
+      <summary>Corresponds to the discrete scale type.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Segment">
+      <summary>Defines line segment.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Segment.#ctor(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Segment" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Segment.IsEmpty">
+      <summary>Gets a value that indicates that the segment is empty.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Segment.StartPoint">
+      <summary>Gets the start point of a segment.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Segment.CenterPoint">
+      <summary>Gets the center point of a segment.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Segment.Empty">
+      <summary>Gets an empty segment.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Segment.EndPoint">
+      <summary>Gets the end point of a segment.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Series">
+      <summary>Represents chart series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.PaintSelf(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.ChartComposite.PaintSelf(PerpetuumSoft.Framework.Model.PaintArguments)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.DataMember">
+      <summary>Gets or sets a data source field name for nested series.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.Values">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.SeriesValueCollection" /> collection of the series values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.GetDataSource">
+      <summary>Returns a series data source.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.OnStyleChanged">
+      <summary>Occurs after the Style property has been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.GetSimpleBounds(PerpetuumSoft.Charts.AxisType)">
+      <summary>Returns the bounds for the axis of the specified type.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.ResetCaption">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.SortingType">
+      <summary>Gets or sets a sorting type of values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Series" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.View">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.SeriesView" /> object that determines the presentation of the series data.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.AutoArgument">
+      <summary>Gets or sets a value that shows that arguments values will be automatically generated.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.Bindings">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.SeriesBindingCollection" /> list of correspondences between data fields for a series and fields in a data source.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.ShouldSerializeCaption">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.DataSourceChanged">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IDataReceiver.DataSourceChanged" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.AddElement(PerpetuumSoft.Instrumentation.Model.Element)">
+      <summary>Adds an element to a collection of elements which represent series chart.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.Sort">
+      <summary>Gets or sets an expression to calculated values used when sorting.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.OnDataPropertiesChanged">
+      <exclude>
+      </exclude>
+      <summary>Performs additional custom processes after data properties have been changed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.Error">
+      <summary>Gets or sets an error from which the data calculation for series has been terminated.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.GetArgumentByIndex(System.Int32)">
+      <summary>Returns an argument of the series value with the corresponding index.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.Caption">
+      <summary>Gets or sets series caption.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.GetArgumentBySeriesValue(PerpetuumSoft.Charts.SeriesValueBase)">
+      <summary>Returns an argument of the specified series value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.DefaultLayer">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.ChartComposite.DefaultLayer" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.AddElements(PerpetuumSoft.Instrumentation.Model.Element[])">
+      <summary>Adds elements array to the collection of elements which represent series chart.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.SeriesSortingType">
+      <summary>Gets or sets sorting type of series.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.SeriesSplitter">
+      <summary>Gets or sets a data source field name by values of which the data will be split into separate series.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Series.DataSource">
+      <summary>Gets or sets a data source name for a series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.ClearElements">
+      <summary>Clears the collection of elements which represent series chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Series.GetSeries">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesBase.GetSeries" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesBase">
+      <summary>Represents a base class for chart series.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.DisplayingInLegendType">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.DisplayingInLegendType" /> which assigns what should be displayed in a legend.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.IsInit">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.Palette">
+      <summary>Gets or sets a palette to color series elements.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.ScaleType">
+      <summary>Gets or sets a value that defines scale type.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.EndInit">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.ChartArea">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.ChartArea" /> in which this series is placed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.PaletteIndex">
+      <summary>Gets or sets palette index.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.ArgumentAxis">
+      <summary>Gets or sets axis arguments.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.ShouldSerializeArgumentAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.ShouldSerializeValueAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.BeginInit">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.OnStrokeChanged">
+      <summary>Occurs after the Stroke property has been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.OnSeriesBaseChanged">
+      <exclude>
+      </exclude>
+      <summary>Performs additional custom processes after the SeriesBase properties have been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.OnDataPropertiesChanged">
+      <summary>Occurs after the data in the source have been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.ResetArgumentAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.RecalculateAll">
+      <summary>Gets or sets a value that indicates that the expressions for all elements should be recalculated.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.OnFillChanged">
+      <summary>Occurs after the Fill property has been changed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.ValueAxis">
+      <summary>Gets or sets axis values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.ResetValueAxis">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.OnAxisPropertiesChanged">
+      <exclude>
+      </exclude>
+      <summary>Performs additional custom processes after properties of one of the axis have been changed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBase.LegendExpression">
+      <summary>Gets or sets expressions to calculate values displayed in a legend.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.ResetAxes">
+      <summary>Recalculates the range of the axes specified in series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBase.GetSeries">
+      <summary>Returns array of series of the specified type.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesBinding">
+      <summary>Represents the correspondence between the data of the source and series data.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBinding.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesBinding" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBinding.Clone">
+      <summary>Creates a copy of this object.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBinding.#ctor(System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesBinding" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBinding.Expression">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBinding.SeriesValueName">
+      <summary>Gets or sets a property name in the series data.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBinding.PropertyName">
+      <summary>Gets or sets a name of the source field.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesBindingCollection">
+      <summary>Represents a collection of SeriesBinding objects.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBindingCollection.Item(System.Int32)">
+      <summary>Implements <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Charts.SeriesBindingCollection.SeriesBindingCollectionChanged">
+      <summary>Represents the method that handles the SeriesBindingCollectionChanged event raised when adding elements to or removing elements from a collection.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesBindingCollection.Item(System.String)">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.SeriesBinding" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesBindingCollection" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.AddRange(PerpetuumSoft.Charts.SeriesBinding[])">
+      <summary>Adds elements to the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.OnInsertComplete(System.Int32,System.Object)">
+      <summary>Occurs after an element of the collection has been inserted.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.OnRemoveComplete(System.Int32,System.Object)">
+      <summary>Occurs after an element has been removed from the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.Contains(PerpetuumSoft.Charts.SeriesBinding)">
+      <summary>Implements <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.Add(PerpetuumSoft.Charts.SeriesBinding)">
+      <summary>Implements <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.IndexOf(PerpetuumSoft.Charts.SeriesBinding)">
+      <summary>Implements <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.Remove(PerpetuumSoft.Charts.SeriesBinding)">
+      <summary>Implements <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesBindingCollection.Insert(System.Int32,PerpetuumSoft.Charts.SeriesBinding)">
+      <summary>Implements <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesDataBindingHelper">
+      <summary>Represents a class designed to build series values by a data source.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.AutoArgument">
+      <summary>Gets or sets value that indicates whether the incremental argument is used.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.Bindings">
+      <summary>Gets or sets a collection of correspondences between data source fields and series value fields.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.GetPropertyNames(System.Object)">
+      <summary>Returns properties names array of the specified object.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.SeriesSortingType">
+      <summary>Gets or sets a type of series sorting.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.#ctor(System.Collections.IEnumerable,System.String,PerpetuumSoft.Charts.SeriesBindingCollection,System.Boolean,System.Type,PerpetuumSoft.Charts.SortingType,System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesDataBindingHelper" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.GetPropertyNames(System.Object,System.String)">
+      <summary>Returns properies names array of the specified object field.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.#ctor(System.Collections.IEnumerable,System.String,PerpetuumSoft.Charts.SeriesBindingCollection,System.Boolean,System.Type,PerpetuumSoft.Charts.SortingType,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesDataBindingHelper" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.DataMember">
+      <summary>Gets or sets a property name that contains a nested data source.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.DataSource">
+      <summary>Gets or sets a series data source.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.#ctor(System.Collections.IEnumerable,System.String,PerpetuumSoft.Charts.SeriesBindingCollection,System.Boolean,System.Type,PerpetuumSoft.Charts.SortingType,System.String,System.String,PerpetuumSoft.Charts.SortingType)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesDataBindingHelper" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.SeriesSplitter">
+      <summary>Gets or sets an expression that groups values by series.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.SeriesValueType">
+      <summary>Gets or sets a type of the series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.#ctor(System.Collections.IEnumerable,System.String,PerpetuumSoft.Charts.SeriesBindingCollection,System.Boolean,System.Type,PerpetuumSoft.Charts.SortingType)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesDataBindingHelper" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.Sort">
+      <summary>Gets or sets an expression of the series values sorting.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.BindPoints">
+      <summary>Returns a Hashtable that contains sets of series elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.#ctor(System.Collections.IEnumerable,System.String,PerpetuumSoft.Charts.SeriesBindingCollection,System.Boolean,System.Type)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesDataBindingHelper" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.GetPropertyNames(System.Object,System.Type)">
+      <summary>Returns properties names array of the specified object type.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.SortingType">
+      <summary>Gets or sets a type of series values sorting.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesDataBindingHelper.DefaultSeriesName">
+      <summary>Gets or sets default series name.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesDataBindingHelper" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesDataBindingHelper.GetSortNamedSeriesValueCollections">
+      <summary>Returns the sorted collection that contains sets of series elements.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesValue">
+      <summary>Represents series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValue.Sum(PerpetuumSoft.Charts.SeriesValueBase)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.Sum(PerpetuumSoft.Charts.SeriesValueBase)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValue.GetValueBounds">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.GetValueBounds" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValue.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesValue" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValue.GetRepresentationObject">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.GetRepresentationObject" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValue.#ctor(System.String,System.Double)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesValue" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesValue.Value">
+      <summary>Gets or sets series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValue.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesValueBase.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValue.#ctor(System.Double,System.Double)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesValue" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesValueBase">
+      <summary>Represents a base class for series values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueBase.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueBase.Clone">
+      <summary>Creates a copy of an object.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueBase.GetRepresentationObject">
+      <summary>Returns an object that represents series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueBase.Sum(PerpetuumSoft.Charts.SeriesValueBase)">
+      <summary>Summarizes with the specified series value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesValueBase.UserData">
+      <summary>Gets or sets additional data of the series value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesValueBase.Sort">
+      <summary>Gets or sets the sort expression value for series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueBase.GetValueBounds">
+      <summary>Returns the bounds of the series values.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesValueBase.Argument">
+      <summary>Gets or sets an argument.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesValueBaseComparer">
+      <summary>Represent a comparer for series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueBaseComparer.#ctor(System.Boolean)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesValueBaseComparer" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueBaseComparer.Compare(System.Object,System.Object)">
+      <summary>Implements <see cref="M:System.Collections.IComparer.Compare(System.Object,System.Object)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesValueCollection">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesValueCollectionProvider">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesValueInfo">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesValueInfoCollection">
+      <summary>Represents a collection of SeriesValueInfo objects. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.Insert(System.Int32,PerpetuumSoft.Charts.SeriesValueInfo)">
+      <summary>Implements <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.OnInsertComplete(System.Int32,System.Object)">
+      <summary>Occurs when an element is added to a collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.Contains(PerpetuumSoft.Charts.SeriesValueInfo)">
+      <summary>Implements <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.AddRange(PerpetuumSoft.Charts.SeriesValueInfo[])">
+      <summary>Adds elements to a collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.Remove(PerpetuumSoft.Charts.SeriesValueInfo)">
+      <summary>Implements <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.IndexOf(PerpetuumSoft.Charts.SeriesValueInfo)">
+      <summary>Implements <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.OnRemoveComplete(System.Int32,System.Object)">
+      <summary>Occurs when an element is removed from a collection.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesValueInfoCollection.Item(System.Int32)">
+      <summary>Implements <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SeriesValueInfoCollection" /> class.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Charts.SeriesValueInfoCollection.CollectionChanged">
+      <summary>Represents the method that handles the CollectionChanged event raised when adding elements to or removing elements from a collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesValueInfoCollection.Add(PerpetuumSoft.Charts.SeriesValueInfo)">
+      <summary>Implements <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SeriesView">
+      <summary>Represents a base class for all series views dispalying the series data.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent">
+      <summary>Gets indents on the scale.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesView.Series">
+      <summary>Gets or sets the series displayed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetChartAreaPalette">
+      <summary>Returns palette specified in the ChartArea.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.ResetStroke">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.ResetElementIndex">
+      <summary>Resets index of the series.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesView.StoredFill">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesView.Fill">
+      <summary>Gets or sets Fill object that is used to paint over.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.CreateElements(PerpetuumSoft.Charts.ChartArea)">
+      <summary>Creates elements representing a chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetSeriesValueType">
+      <summary>Returns the type of the series values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <summary>Returns chart bounds for the axis of the specified type.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetNotPaintedSeries(PerpetuumSoft.Charts.ChartArea,System.Type)">
+      <summary>Returns the array of unpainted series of the specified type.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesView.StoredStroke">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.ShouldSerializeFill">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesView.Stroke">
+      <summary>Gets or sets Stroke object that is used to trace.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetCurrentElementIndex">
+      <summary>Returns index of the current series.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported">
+      <summary>Returns a value that shows whether this chart type is displayed in the legend by the values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetPaletteStroke(System.Int32)">
+      <summary>Returns the Stroke specified in the palette.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetPaletteFill(System.Int32)">
+      <summary>Returns the Fill specified in the palette.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Paints a legend badge for the series value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetLabelPosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition,PerpetuumSoft.Framework.Drawing.Vector,System.Double)">
+      <summary>Returns the center of the mark with the specified value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetSeries(PerpetuumSoft.Charts.ChartArea,System.Type)">
+      <summary>Returns series array of the specified type.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.IsValidSeries(PerpetuumSoft.Charts.Series,System.Type)">
+      <summary>Returns a value that indicates that the series can be painted with the help of the specified SeriesView.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.ResetFill">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="E:PerpetuumSoft.Charts.SeriesView.SeriesViewChanged">
+      <summary>Occurs after the change of an object state.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.Clone">
+      <summary>Creates an object copy.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadgeToImage(System.Drawing.Image,System.Int32)">
+      <summary>Paints a legend badge for the series value to specified image.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetValuePosition(PerpetuumSoft.Charts.SeriesValueBase,PerpetuumSoft.Charts.LabelsPosition)">
+      <summary>Returns a point that corresponds to the specified value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.OnSeriesViewChanged(System.EventArgs)">
+      <summary>Raises the SeriesViewChanged event.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetNextElementIndex">
+      <summary>Returns index of the next series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Paints a legend badge for the series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetSeries(PerpetuumSoft.Charts.Series[],System.Type)">
+      <summary>Returns series array of the specified type.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.GetPaletteColor(System.Int32)">
+      <summary>Returns the Color specified in the palette.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadgeToImage(System.Drawing.Image)">
+      <summary>Paints a legend badge for the series to a specified image.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SeriesView.ShouldSerializeStroke">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SharpAngleAxisArrow">
+      <summary>Represents axis arrow with a sharp angle.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SharpAngleAxisArrow.GetSize(PerpetuumSoft.Charts.AxisDirection)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.AxisArrow.GetSize(PerpetuumSoft.Charts.AxisDirection)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SharpAngleAxisArrow.Size">
+      <summary>Gets or sets shape size.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SharpAngleAxisArrow.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.AxisDirection,PerpetuumSoft.Framework.Drawing.Stroke,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.AxisArrow.Paint(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.AxisDirection,PerpetuumSoft.Framework.Drawing.Stroke,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SharpAngleAxisArrow.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SharpAngleAxisArrow" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SimpleAxisSeriesView">
+      <summary>Represents a base class for SeriesView which builds a chart along axes independent of other series with the same SeriesView.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SimpleAxisSeriesView.CreateElements(PerpetuumSoft.Charts.ChartArea)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.CreateElements(PerpetuumSoft.Charts.ChartArea)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SimpleAxisSeriesView.CreateElementsForSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Creates array of elements which represent a chart of the specified series. </summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SimplePalette">
+      <summary>Represents a base class for palettes.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SimplePalette.GetLineStroke(System.Drawing.Color,System.Double,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetLineStroke(System.Drawing.Color,System.Double,System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SimplePalette.GetShape(System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Palette.GetShape(System.Int32)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SortingType">
+      <summary>Enumerates sorting type.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.SortingType.Descending">
+      <summary>Specifies descending sorting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.SortingType.None">
+      <summary>Specifies no sorting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.SortingType.Ascending">
+      <summary>Specifies ascending sorting.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SplineAreaElement">
+      <summary>Represents an element, spline area.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineAreaElement.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineAreaElement.#ctor(PerpetuumSoft.Framework.Drawing.Vector[],PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SplineAreaElement" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineAreaElement.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SplineAreaSeriesView">
+      <summary>Represents series view to display series data in the form of an area limited by spline.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineAreaSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineAreaSeriesView.CreateElementsForSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Creates series elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineAreaSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SplineAreaSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineAreaSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SplineElement">
+      <summary>Represents an element - spline.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineElement.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SplineElement" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineElement.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineElement.#ctor(PerpetuumSoft.Framework.Drawing.Vector[])">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SplineElement" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineElement.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SplineSeriesView">
+      <summary>Represents series view to display series data in the form of spline.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SplineSeriesView.DefaultLineWidth">
+      <summary>Gets or sets default line width.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesView.GetSplineSeriesViewStroke(System.Int32)">
+      <exclude>
+      </exclude>
+      <summary>Returns the Stroke object used to paint spline by specified palette index.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesView.CreateElementsForSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Creates series elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.SplineSeriesView" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SplineSeriesView.DefaultColor">
+      <summary>Gets or sets default line color.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SplineSeriesView.DefaultLineStyle">
+      <summary>Gets or sets default line style.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.SplineSeriesViewBase">
+      <summary>Represents a base class for series view displaying series data in the form of the spline.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesViewBase.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.SplineSeriesViewBase.IsValueLegendItemSupported">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Charts.SeriesView.IsValueLegendItemSupported" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesViewBase.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.SplineSeriesViewBase.GetSideIndent">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetSideIndent" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Stacked100AreaSeriesView">
+      <summary>Represents series view to display series data in the form of neighboring areas restricted by lines which go through points which correspond to ratio of series value to the total series value with the given argument.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100AreaSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Stacked100AreaSeriesView.TopValue">
+      <summary>Gets or sets a value that assigns the top bound of series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100AreaSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Stacked100AreaSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100AreaSeriesView.CreateElementForSeries(PerpetuumSoft.Charts.ChartArea,PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AreaSeriesViewPoint[])">
+      <summary>Creates series elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100AreaSeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Stacked100BarSeriesView">
+      <summary>Represents series view to display series data in the form of columns. Columns hight is the ratio of the series value to the total series value with the given argument.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Stacked100BarSeriesView.BottomValue">
+      <summary>Gets or sets a value that assigns the bottom bound of series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100BarSeriesView.CreateElements(PerpetuumSoft.Charts.ArgumentValuesMap,PerpetuumSoft.Charts.ChartArea)">
+      <summary>Creates elements to display series data.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100BarSeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100BarSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Stacked100BarSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Stacked100BarSeriesView" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Stacked100BarSeriesView.TopValue">
+      <summary>Gets or sets a value that assigns the top bound of series.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.StackedAreaSeriesView">
+      <summary>Represents series view to display series data in the form of the neighboring areas restricted by lines which go through the points which correspond to series data.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedAreaSeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedAreaSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedAreaSeriesView.CreateElementForSeries(PerpetuumSoft.Charts.ChartArea,PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AreaSeriesViewPoint[])">
+      <summary>Creates series elements.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedAreaSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.StackedAreaSeriesView" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.StackedBarSeriesView">
+      <summary>Represents series view to display series data in the form of the stacked bar.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedBarSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.StackedBarSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedBarSeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedBarSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StackedBarSeriesView.CreateElements(PerpetuumSoft.Charts.ArgumentValuesMap,PerpetuumSoft.Charts.ChartArea)">
+      <summary>Creates elements displaying series data.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.StepLineSeriesView">
+      <summary>Represents series view to display series data in the form of the step line.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StepLineSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.StepLineSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StepLineSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StepLineSeriesView.CreateElementsForSeries(PerpetuumSoft.Charts.Series)">
+      <summary>Creates elements to display series data.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.StockSeriesView">
+      <summary>Represents a financial type of the Stock chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StockSeriesView.ShouldSerializeReductionStroke">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StockSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.StockSeriesView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StockSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.StockSeriesView.ReductionStroke">
+      <summary>Gets or sets line type for the descending series values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StockSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.StockSeriesView.ViewMode">
+      <summary>Gets or sets view mode of the series values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StockSeriesView.ResetReductionStroke">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.StockSeriesView.CreateElement(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.FinancialSeriesValue,System.Boolean)">
+      <summary>Creates an element by the specified series value, series type.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.StockViewMode">
+      <summary>Enumerates a type that specifies view mode of a Stock chart.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.StockViewMode.Both">
+      <summary>To show the Open and Close values.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.StockViewMode.Close">
+      <summary>To show the Close value.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.StockViewMode.Open">
+      <summary>To show the Open value.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.StockViewMode.None">
+      <summary>Not to show the Open and Close values.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.TankSeriesView">
+      <summary>Represents series view to display series data in the form of the Tank.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.TankSeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)">
+      <exclude>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</exclude>
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendValueBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.TankSeriesView.CreateElements(PerpetuumSoft.Charts.ArgumentValuesMap,PerpetuumSoft.Charts.ChartArea)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.TankSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.TankSeriesView" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.TankSeriesView.Depth">
+      <summary>Gets or sets <see cref="T:System.Double" />. This value represent the depth of the 3rd dimension of the Tank.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.TankSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.TankSeriesView.TankWidth">
+      <summary>Gets or sets <see cref="T:System.Double" />. This is the width of the tank side.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.TankSeriesView.TankColor">
+      <summary>Gets or sets <see cref="T:System.Drawing.Color" /> of the tank side.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.TankSeriesView.GetElement(PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Double,System.Int32)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.TankSeriesView.Fill">
+      <exclude>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Fill" /></exclude>
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Fill" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.TankSeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])">
+      <exclude>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</exclude>
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.GetBounds(PerpetuumSoft.Charts.Series,PerpetuumSoft.Charts.AxisType,PerpetuumSoft.Charts.Series[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.TankSeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <exclude>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</exclude>
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.PaintLegendBadge(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.TankSeriesView.Effect3D">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Instrumentation.Model.Effect3D" /> style of the Tank element painting.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.TankSeriesView.ViewType">
+      <exclude>Gets or sets <see cref="T:PerpetuumSoft.Charts.ViewType" /></exclude>
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.ViewType" /></summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ThermometerSeriesView">
+      <summary>Represents series view to display series data in the form of the Thermometer.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ThermometerSeriesView.GetElement(PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Double,System.Int32)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ThermometerSeriesView.Clone">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.SeriesView.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ThermometerSeriesView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.ThermometerSeriesView" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ThermometerSeriesView.CoreWidth">
+      <summary>Gets or sets <see cref="T:System.Double" />. It is the width of the core of the thermometer.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Title">
+      <summary>Represents a chart title.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.Font">
+      <summary>Gets or sets font for the title text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Title.OnVisibleChanged">
+      <summary>Occurs after the Visible property has been changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Title.Calculate">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.Calculate" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Title.SetBounds(PerpetuumSoft.Framework.Drawing.VectorRectangle)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IDockable.SetBounds(PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.Padding">
+      <summary>Gets or sets indent for this element.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Title.GetRotatedRectangleSize(PerpetuumSoft.Framework.Drawing.Vector,System.Double)">
+      <summary>Returns size of the title bounds taking into account the specified angle of the text rotation.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.DockingStyle">
+      <summary>Implements <see cref="P:PerpetuumSoft.Charts.IDockable.DockingStyle" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.Margins">
+      <summary>Gets or sets margins of the text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Title.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Title.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Title" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.TextFill">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Fill" /> used to face title text.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.RecalculateAll">
+      <summary>Gets or sets a value that indicates whether expressions will be recalculate for all elements or for these elements only.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.DockingType">
+      <summary>Implements <see cref="P:PerpetuumSoft.Charts.IDockable.DockingType" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.Text">
+      <summary>Gets or sets text displayed in the title.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.Alignment">
+      <summary>Gets or sets text alingment within an element.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Title.TextAngle">
+      <summary>Gets or sets an angle of the text rotation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Title.GetSize">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IDockable.GetSize" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ValueLabels">
+      <summary>Represents labels to display series values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Returns an element from the specified layer.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Series">
+      <summary>Gets <see cref="T:PerpetuumSoft.Charts.Series" /> series for which a lebel is used.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.ResetMeasure">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IScaleElement.ResetMeasure" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.GetTextLabel(System.Object)">
+      <summary>Returns label text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.ValueLabels" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.GetObject(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.IExpressionSite.GetObject(System.String)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Angle">
+      <summary>Determines labels rotation angle.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Margins">
+      <summary>Gets or sets margins of the label text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Shift">
+      <summary>Gets or sets shift by two coordinates.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Font">
+      <summary>Gets or sets label text font.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Paints an element specified in the layer.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.PaintValueLabelInfo(System.String,PerpetuumSoft.Framework.Drawing.VectorRectangle,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke,PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Paints text by the specified parameters with the center in the specified point.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.Calculate">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.Calculate" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Distance">
+      <summary>Gets or sets the distance between a label and a chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.Clone">
+      <summary>Implements <see cref="M:System.ICloneable.Clone" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.TextFormat">
+      <summary>Gets or sets a string to format a value displayed by the label.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueLabels.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Formula">
+      <summary>Gets or sets an expression that is used for calculation of the displayed label value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.LineStroke">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Drawing.Stroke" /> used to face label lines.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.TextFill">
+      <summary>Gets or sets fill to face label text.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueLabels.Position">
+      <summary>Gets or sets label position.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ValueMarkers">
+      <summary>Represents a marker to indicate characteristic points on chart series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IChartElement.PaintLayer(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Charts.ChartLayer)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueMarkers.Position">
+      <summary>Gets or sets marker position.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueMarkers.SeriesBase">
+      <summary>Gets series to which these markers belong.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.GetHitTest(PerpetuumSoft.Framework.Drawing.Vector)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueMarkers.Size">
+      <summary>Gets or sets marker size.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueMarkers.Shift">
+      <summary>Gets or sets marker shift by both coordinates.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.Calculate">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.Calculate" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueMarkers.Distance">
+      <summary>Gets or sets shift of a marker from the series.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Charts.IChartElement.GetElementAtLayer(PerpetuumSoft.Framework.Drawing.Vector,PerpetuumSoft.Charts.ChartLayer)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.ValueMarkers" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.Clone">
+      <summary>Implements <see cref="M:System.ICloneable.Clone" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.ValueMarkers.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Instrumentation.Model.Element.OnPaint(PerpetuumSoft.Framework.Model.PaintArguments,PerpetuumSoft.Framework.Drawing.Fill,PerpetuumSoft.Framework.Drawing.Stroke)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.ValueMarkers.Shape">
+      <summary>Gets or sets shape to paint a marker.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.ViewType">
+      <summary>Enumerates display type of the series data in the form of bar chart.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ViewType.Pyramide">
+      <summary>Enumerates display type of the series data in the form of pyramids.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ViewType.Bar3D">
+      <summary>Enumerates display type of the series data in the form of parallelepiped.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ViewType.Cylinder">
+      <summary>Enumerates display type of the series data in the form of cylinders.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ViewType.RoundedBar">
+      <summary>Determines the series elements drawing in the form of rounded rectangle.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ViewType.Brick">
+      <summary>Determines the "Brick" effect when the series elements are drawn.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Charts.ViewType.Bar">
+      <summary>Enumerates display type of the series data in the form of rectangles.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource">
+      <summary>Represents the description of a chart data source.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource.DataMember">
+      <summary>Gets or sets a name of a data source field.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource.#ctor(System.ComponentModel.IContainer)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource.Dispose(System.Boolean)">
+      <summary>Overridden. See Dispose.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource.#ctor(System.Object,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource.DataSource">
+      <summary>Gets or sets a data source.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartDataSource.DataSourceName">
+      <summary>Gets or sets a name of a data source.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection">
+      <summary>Represents a collection of the ChartDatasource objects.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.Item(System.Int32)">
+      <summary>Implements <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.Contains(PerpetuumSoft.Charts.Windows.Forms.ChartDataSource)">
+      <summary>Implements <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.CollectionChanged">
+      <summary>Represents the method that handles the CollectionChanged event raised when adding elements to or removing elements from a collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.Add(PerpetuumSoft.Charts.Windows.Forms.ChartDataSource)">
+      <summary>Implements <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.OnRemoveComplete(System.Int32,System.Object)">
+      <summary>Occurs when an element is removed from a collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.GetByName(System.String)">
+      <summary>Gets or sets a data source by the name.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.IndexOf(PerpetuumSoft.Charts.Windows.Forms.ChartDataSource)">
+      <summary>Implements <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.Remove(PerpetuumSoft.Charts.Windows.Forms.ChartDataSource)">
+      <summary>Implements <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.AddRange(PerpetuumSoft.Charts.Windows.Forms.ChartDataSource[])">
+      <summary>Adds elements to a collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.Insert(System.Int32,PerpetuumSoft.Charts.Windows.Forms.ChartDataSource)">
+      <summary>Implements <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartDataSourceCollection.OnInsertComplete(System.Int32,System.Object)">
+      <summary>Occurs when an element is added to a collection.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.ChartLicenseProvider">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.ChartViewer">
+      <summary>Presents a control to display a chart.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.InvalidateInterval">
+      <summary>Gets or sets image renewal interval.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.Print(System.Drawing.Printing.PrinterSettings)">
+      <summary>Prints chart image.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ShowOpen">
+      <summary>Gets or sets visibility of the 'Open' button on the Toolbar.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ChartRectangle">
+      <summary>Gets the area occupied by a chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OnLoad(System.EventArgs)">
+      <summary>Raises the Load event.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ShowSave">
+      <summary>Gets or sets visibility of the 'Save' button on the Toolbar.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OpenChart(System.String)">
+      <summary>Loads a chart from a file specified by a name.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.Dispose(System.Boolean)">
+      <summary>Overloaded. Releases the resources used by the Component.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.Reload">
+      <summary>Recalculates a chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.RunDesigner">
+      <summary>Runs the designer for the chart displayed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ToolBarVisible">
+      <summary>Gets or sets a value indicating that the toolbar is visible.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ShowPrint">
+      <summary>Gets or sets visibility of the 'Print' button on the Toolbar.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.SaveChart(System.String)">
+      <summary>Saves a chart to a file specified by name.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OpenDialog">
+      <summary>Shows an open dialog for chart loading from a file.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.GetElementAt(System.Drawing.Point)">
+      <summary>Returns a chart element placed at the specified point.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OnPaint(System.Windows.Forms.PaintEventArgs)">
+      <summary>Raises the Paint event.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.InstrumentLoad">
+      <summary>Loads a chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.GetDataListNames">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IDataContext.GetDataListNames" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ChartCallBack(PerpetuumSoft.Framework.Drawing.GraphicStream)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Windows.Forms.ChartViewer" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.SaveDialog">
+      <summary>Shows a dialog for a chart saving to a file.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.Chart">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Charts.Chart" /> - a chart displayed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ShowNew">
+      <summary>Gets or sets visibility of the 'New' button on the Toolbar.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.GetElementAt(System.Int32,System.Int32)">
+      <summary>Returns a chart element placed at the specified point.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.GetDataList(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Instrumentation.Model.IDataContext.GetDataList(System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.PrintDialog">
+      <summary>Shows the printing dialog.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.CreateNewChart">
+      <summary>Creates a new chart.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.StringRegKey">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OnEnabledChanged(System.EventArgs)">
+      <summary>Raises the EnabledChanged event.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OnInstrumentLoad(System.EventArgs)">
+      <summary>Occures after a chart has been loaded.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ShowDesigner">
+      <summary>Gets or sets visibility of the 'Designer' button on the Toolbar.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.CopyToClipboard">
+      <summary>Copies chart image to the clipboard.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.SaveAsImageDialog">
+      <summary>Shows a dialog for a chart saving in the form of a picture. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.DataSources">
+      <summary>Gets a collection of data sources for a chart.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OnSizeChanged(System.EventArgs)">
+      <summary>Raises the SizeChanged event.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.HideFocusRectangle">
+      <summary>Gets or sets a value which points that there is no need for display of the control framing even when it is in focus.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ShowCopyToClipboard">
+      <summary>Gets or sets visibility of the 'Copy to clipboard' button on the Toolbar.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ZoomScale">
+      <summary>Gets or sets zoom scale.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ShowSaveAsImage">
+      <summary>Gets or sets visibility of the 'Save as image' button on the Toolbar.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OnLostFocus(System.EventArgs)">
+      <summary>Raises the LostFocus event.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.OnGotFocus(System.EventArgs)">
+      <summary>Raises the GotFocus event.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.ChartStream">
+      <summary>Gets chart serialized to a string.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.DashboardLicenseProvider">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.DashboardViewer">
+      <summary>Presents a control to display a dashboard.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.DashboardViewer.RunDesigner">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Charts.Windows.Forms.ChartViewer.RunDesigner" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.DashboardViewer.CreateDashboardDesignerForm">
+      <summary>Returns the initialized form of the designer to edit dashboard.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Charts.Windows.Forms.DashboardViewer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Charts.Windows.Forms.DashboardViewer" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.Design.DataSourceEditorForm">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Charts.Windows.Forms.Design.WizardForm">
+      <exclude>
+      </exclude>
+    </member>
+  </members>
+</doc>

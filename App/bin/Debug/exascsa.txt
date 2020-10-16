@@ -1,0 +1,1 @@
+{"Id":0,"MaDuThi":"ABC","HoTen":"1411908554","GioiTinh":true,"NgayThangNamSinh":"2020-10-16T22:09:44.1463867+07:00","DanToc":"1411908554aaaa"}

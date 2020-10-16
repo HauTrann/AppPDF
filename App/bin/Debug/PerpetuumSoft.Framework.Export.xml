@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>PerpetuumSoft.Framework.Export</name>
+  </assembly>
+  <members>
+    <member name="T:PerpetuumSoft.Framework.Export.BmpExport"><summary>Class used for export to BMP image.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.Export.Save(System.String,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)"><summary>Saves an object being exported to file with given name.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.PngExport.#ctor(System.Int32)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.PngExport" /> class with given resolution.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.FlashExport.Filter"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Filter" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)"><summary>Overridden. See <see cref="M:PerpetuumSoft.Framework.Export.Export.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.GetImageFormat"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.GetImageFormat" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.PngExport.#ctor(System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.PngExport" /> class with given scale.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.SVGExport.Filter"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Filter" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.BmpExport.GetImageFormat"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.GetImageFormat" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.SVGExport.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.SVGExport" /> class.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.GifExport.#ctor(System.Int32)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.GifExport" /> class with given resolution.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.GetImageFormat"><summary>Returns ImageFormat used.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.#ctor(System.Int32,System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.JpegExport" /> class with given resolution and scale.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.JpegExport.JpegQuality"><summary>Gets or sets <see cref="T:System.Int32" /></summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.#ctor(System.Int32)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.JpegExport" /> class with given resolution.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.#ctor(System.Int32,System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.ImageExport" /> class with given resolution and scale.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.CreateOptionsDialog"><summary>Overridden. See <see cref="M:PerpetuumSoft.Framework.Export.Export.CreateOptionsDialog" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.PngExport"><summary>Class used for export to PNG image.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.BmpExport.#ctor(System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.BmpExport" /> class with given scale.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.Export.CreateOptionsDialog"><summary>Returns user control to be used in ExportDialog.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.PngExport.#ctor(PerpetuumSoft.Framework.Drawing.Vector)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.PngExport" /> class with given image size.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.GifExport.#ctor(PerpetuumSoft.Framework.Drawing.Vector)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.GifExport" /> class with given image size.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.JpegExport" /> class.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.ImageExport.SizeMode"><summary>Represents avaliable picture scaling modes.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.ImageExport" /> class.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.Export.Filter"><summary>FileExtension filter to be used in ExportDialog.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.FlashExport.Description"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Description" />.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.PngExport.Filter"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Filter" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.Export.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)"><summary>Saves an object being exported to <see cref="T:System.IO.Stream" />.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.GifExport.Description"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Description" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.CreateOptionsDialog"><summary>Overridden. See <see cref="M:PerpetuumSoft.Framework.Export.Export.CreateOptionsDialog" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.SVGExport"><summary>Main class used for SVG export.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.JpegExport"><summary>Class used for export to JPEG image.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.ImageExport.Resolution"><summary>Gets or sets image resolution.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.GifExport.GetImageFormat"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.GetImageFormat" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)"><summary>Overridden. See <see cref="M:PerpetuumSoft.Framework.Export.Export.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.BmpExport.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.BmpExport" /> class.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.Export.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.Export" /> class.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.ImageExport.Scale"><summary>Gets or sets image scale.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.#ctor(System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.ImageExport" /> class with given scale.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.PngExport.Description"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Description" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.GifExport.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.GifExport" /> class.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.FlashExport"><summary>Main class used for Flash export.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.BmpExport.Description"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Description" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.BmpExport.#ctor(PerpetuumSoft.Framework.Drawing.Vector)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.BmpExport" /> class with given size.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.#ctor(System.Int32)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.ImageExport" /> class with given resolution.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.GifExport.#ctor(System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.GifExport" /> class with given scale.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.FlashExport.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)"><summary>Overridden. See <see cref="M:PerpetuumSoft.Framework.Export.Export.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.CreateImage(PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)"><summary>Returns an image an object was exported to.  </summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.FlashExport.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.FlashExport" /> class.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.PngExport.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.PngExport" /> class.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.SVGExport.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)"><summary>Overridden. See <see cref="M:PerpetuumSoft.Framework.Export.Export.Save(System.IO.Stream,PerpetuumSoft.Framework.Export.Export.PaintCallBack,PerpetuumSoft.Framework.Drawing.Vector)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.BmpExport.#ctor(System.Int32)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.BmpExport" /> class with given resolution.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.JpegExport.Filter"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Filter" />.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.JpegExport.Description"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Description" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.Windows.Forms.ExportDialog"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Export.SVGExport.Description"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Description" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.BmpExport.#ctor(System.Int32,System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.BmpExport" /> class with given resolution and scale.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.GifExport.Filter"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Filter" />.</summary></member>
+    <member name="F:PerpetuumSoft.Framework.Export.ImageExport.SizeMode.Size"><summary>Scaling by size.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.PngExport.GetImageFormat"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.GetImageFormat" />.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.ImageExport.Mode"><summary>Gets or sets scaling mode.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.PngExport.#ctor(System.Int32,System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.PngExport" /> class with given scale and resolution.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.ImageExport.Size"><summary>Gets or sets image size.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.Export.Description"><summary>Returns description for Export.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.Export.ToString"><summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.GifExport"><summary>Class used for export to GIF image.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.Export.PaintCallBack"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Export.ImageExport.#ctor(PerpetuumSoft.Framework.Drawing.Vector)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.ImageExport" /> class with given image size.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.#ctor(System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.JpegExport" /> class with given scale.</summary></member>
+    <member name="F:PerpetuumSoft.Framework.Export.ImageExport.SizeMode.Resolution"><summary>Scaling by resolution.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Export.BmpExport.Filter"><summary>Overridden. See <see cref="P:PerpetuumSoft.Framework.Export.Export.Filter" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.JpegExport.#ctor(PerpetuumSoft.Framework.Drawing.Vector)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.JpegExport" /> class with given image size.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.ImageExport"><summary>Main class used for exporting to image.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Export.Export"><summary>This class must be extended in order for Export to be available from export dialog.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.Export.GetAllFilesFilter"><summary>Returns filter for all files.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Export.GifExport.#ctor(System.Int32,System.Double)"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Export.GifExport" /> class with given resolution and scale.</summary></member>
+  </members>
+</doc>

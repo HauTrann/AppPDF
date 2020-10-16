@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>PerpetuumSoft.Framework.Model</name>
+  </assembly>
+  <members>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.EmptyView"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.Tool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.SnapService"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.BookmarkSelected"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.UndoPropertyDescriptor"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnMouseLeave(System.EventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.PaintArguments.#ctor(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle,System.Object)"><summary>Initializes the new instance of the <see cref="T:PerpetuumSoft.Framework.Model.PaintArguments" /> class with the specified graphics, clipping rectangle and drawing context.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PaintArguments"><summary>Represents arguments for invalidating.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Implementation.Element"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IElement"><summary>Represents element of an abstract model.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.InplaceEditor"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementList.Add(PerpetuumSoft.Framework.Model.IElement)"><summary>When implemented by a class, adds an element to the IList interface.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.OnInsert(System.Int32,System.Object)"><summary>Performs the additional custom processes before inserting a new element into the collection instance.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Model.PaintArguments.Context"><summary>Gets context for drawing.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnMouseEnter(System.EventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.InvalidateEventHandler"><summary>Represents method that will handle region drawing.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Model.PaintArguments.ClipRectangle"><summary>Gets the rectangle to paint in.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.DocumentViewerTool"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.MouseArguments.#ctor(System.Double,System.Double,System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)"><summary>Initializes the new instance of the <see cref="T:PerpetuumSoft.Framework.Model.MouseArguments" /> class with specified parameters. Parameters initialize the corresponding properies.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.PanTool"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.MouseArguments.GetPosition(PerpetuumSoft.Framework.Model.IElement)"><summary>Returns the mouse position in the current view.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.OnRemoveComplete(System.Int32,System.Object)"><summary>Performs the additional custom processes after removing an element from the collection instance.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.ISnapService"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Implementation.Page"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.AddServiceProvider(System.IServiceProvider)"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.SelectionDecorator"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.DesignerPropertyGrid"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.IElementCollection.Item(System.Int32)"><summary>Gets or sets an element at the specified index. </summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.SelectionDesigner"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Implementation.CompositeElement"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.ITransformElement"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.PaintArguments.Stream"><summary>Gets the <see cref="T:PerpetuumSoft.Framework.Drawing.GraphicStream" /> used to paint.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.KeyboardArguments"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.IndexOf(PerpetuumSoft.Framework.Model.IElement)"><summary>Overloaded. Returns the zero-based index of the first element occurrence in the collection or in its portion.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.ICompositeElement"><summary>Represents the composite element of an abstract model.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.SinglePageView"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.ClientSize"><summary>Gets the size of client rectangle.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnKeyUp(System.Windows.Forms.KeyEventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.Command"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.IElementDesignerHost"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Implementation.Document"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.DesignerDocumentTree"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnPaint(System.Windows.Forms.PaintEventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.InplaceEditorForm"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.Add(PerpetuumSoft.Framework.Model.IElement)"><summary>Adds an element to the collection.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.Delta"><summary>Gets the signed number count of the of detents the mouse wheel has rotated. A detent is one notch of the mouse wheel.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.PerpetuumSoft#Framework#Model#Viewing#IViewFrame#UpdateView"><summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.UpdateView" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.DesignerPageTab"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PageInvalidateEventArgs"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ElementView"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.AddRange(PerpetuumSoft.Framework.Model.IElement[])"><summary>Adds an elements to the collection.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnMouseDown(System.Windows.Forms.MouseEventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.DesignTool"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.OnInsertComplete(System.Int32,System.Object)"><summary>Performs the additional custom processes after inserting a new element into the collection instance.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame"><summary>Represents a control that be assigned to dispalying instrument.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.OnePageView"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.VRuler"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IDocumentElement"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.MouseArguments"><summary>Represents the arguments for the mouse event.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.DynamicZoomTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ZoomOutTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IPageCollection"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.DeleteCommand"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.SelectTool"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.Button"><summary>Gets whether mouse button was pressed.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.ChangePropertyCommand"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.UpdateView"><summary>Updates view.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.UndoPropertyTab"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.NewElementToolEventHandler"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.CommandStackEventArgs"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.PaintArguments.#ctor(PerpetuumSoft.Framework.Drawing.GraphicStream,PerpetuumSoft.Framework.Drawing.VectorRectangle)"><summary>Initializes the new instance of the <see cref="T:PerpetuumSoft.Framework.Model.PaintArguments" /> class with the specified graphics and clipping rectangle.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.Invalidate(PerpetuumSoft.Framework.Drawing.VectorRectangle)"><summary>Invalidates the specified area in the view frame.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.Invalidate"><summary>Invalidates the view frame.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.FindTextArgument"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ViewManager"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Instrumentation.Model.ElementCollection" /> class.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElement.Paint(PerpetuumSoft.Framework.Model.PaintArguments)"><summary>Draws the IElement object.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.IInplaceEditService"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.IElement.Parent"><summary>Gets or sets <see cref="T:PerpetuumSoft.Framework.Model.ICompositeElement" /> which is a parent for this element.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElement.Invalidate(PerpetuumSoft.Framework.Drawing.VectorRectangle)"><summary>Invalidates the given region.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.RulerBase"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.Contains(PerpetuumSoft.Framework.Model.IElement)"><summary>Determines whether an element is in the collection.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Runtime.PickTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.FindDirection"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnResize(System.EventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PageOrientation"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnMouseUp(System.Windows.Forms.MouseEventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnKeyDown(System.Windows.Forms.KeyEventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ZoomMode"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.DisabledTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ZoomChangeTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.CommandCollection"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Runtime.IActiveElement"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElement.GetElementAt(PerpetuumSoft.Framework.Drawing.Vector)"><summary>Returns an element that is placed under given point.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.PerpetuumSoft#Framework#Model#Viewing#IViewFrame#ClientSize"><summary>Implements <see cref="P:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.ClientSize" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.ISelectionDesignerService"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.IElementList.Item(System.Int32)"><summary>When implemented by a class, gets or sets an element at the specified index.</summary></member>
+    <member name="P:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.Manager"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.Manager"><exclude>Возвращает <see cref="T:PerpetuumSoft.Framework.Model.Viewing.ViewManager" /></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PageInvalidationMode"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.IsInputKey(System.Windows.Forms.Keys)"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.Shift"><summary>Gets whether Shift-key was pressed.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.IViewFrame"><summary>Provides a means of displaying a frame.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.OnValidate(System.Object)"><summary>Performs additional custom processes when validating a value.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.HRuler"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IElementCollection"><summary>Represents a collection of elements.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ZoomInTool"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElement.Invalidate"><summary>Invalidates the whole element.</summary></member>
+    <member name="E:PerpetuumSoft.Framework.Model.IRootElement.Invalidated"><summary>Occurs after invalidating.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.ElementPrintDocument"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.PerpetuumSoft#Framework#Model#Viewing#IViewFrame#GetService(System.Type)"><exclude></exclude><summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.GetService(System.Type)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.MouseEventHandler"><summary>Represents the method that will handle mouse events.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.ElementDesigner"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.MultiPageView"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.UpdateView"><summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.UpdateView" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnMouseMove(System.Windows.Forms.MouseEventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PropertyEventArgs"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.ViewFrame"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.RegionZoomTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.InvalidateEventArgs"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.ICompositeElement.Elements"><summary>Gets the <see cref="T:PerpetuumSoft.Framework.Model.IElementList" /> collection, that contains inner elements.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.DocumentView"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IContentsTree"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.DesignerUserControl"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.SelectionMode"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.ContentsTree"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.Clicks"><summary>Gets the number of times the mouse button was pressed and released.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.GridService"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.FindTextOptions"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.Remove(PerpetuumSoft.Framework.Model.IElement)"><summary>Removes the first occurrence of an element from the collection.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ViewCursors"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PageInvalidateEventHandler"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.IsolatedPageView"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ITooltipService"><exclude></exclude></member>
+    <member name="E:PerpetuumSoft.Framework.Model.IElementCollection.ElementAdded"><summary>Occurs after an element was added.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnEnter(System.EventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnEnter(System.EventArgs)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.View"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IRootElement"><summary>Represents the root element of an abstract model.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.System#IServiceProvider#GetService(System.Type)"><exclude></exclude><summary>Implements <see cref="M:System.IServiceProvider.GetService(System.Type)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.SelectionDesignerService"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.ElementDesignerHost"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.ZOrderModifier"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IDocument"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.AddCommand"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.NewElementTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.DesignerService"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.Selection"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.CommandStack"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.PerpetuumSoft#Framework#Model#Viewing#IViewFrame#Invalidate"><summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.Invalidate" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PagesPrintDocument"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.GetService(System.Type)"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.IUndoStack"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElement.GetBoundedBox"><summary>Returns the circumscribed rectangle.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IPage"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.View"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.IPropertyGridUndoService"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.Zoom"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.ViewRectangle"><summary>Gets the size of client rectangle.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.CompositeCommand"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.X"><summary>Gets the x-coordinate of the mouse cursor.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.GetService(System.Type)"><exclude>Реализует <see cref="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.GetService(System.Type)" />.</exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.NewElementToolEventArgs"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.IGridService"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.ISelection"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IElementList"><summary>List of the objects, implementing the <see cref="T:PerpetuumSoft.Framework.Model.IElement" /> interface.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.RemoveServiceProvider(System.IServiceProvider)"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementCollection.Insert(System.Int32,PerpetuumSoft.Framework.Model.IElement)"><summary>Inserts an element into the collection at the specified index.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.PaintBox"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.CommandStackEventHandler"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.Alt"><summary>Gets whether Alt-key was pressed.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.IElementCollection.CollectionChanged"><summary>Represents method that will handle ElementAdded and ElementRemoved events.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.CommandsModel.ChangeType"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.Dispose(System.Boolean)"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.OnMouseWheel(System.Windows.Forms.MouseEventArgs)"><summary>Overriden. See <see cref="M:System.Windows.Forms.Control.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.PerpetuumSoft#Framework#Model#Viewing#IViewFrame#Invalidate(PerpetuumSoft.Framework.Drawing.VectorRectangle)"><summary>Implements <see cref="M:PerpetuumSoft.Framework.Model.Viewing.IViewFrame.Invalidate(PerpetuumSoft.Framework.Drawing.VectorRectangle)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.DecoratorTool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Design.DesignerSite"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.IElementList.Remove(PerpetuumSoft.Framework.Model.IElement)"><summary>When implemented by a class, removes the first specific element occurrence from the IList interface.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.PropertyEventHandler"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Runtime.IInputElement"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.Ctrl"><summary>Gets whether Ctrl-key was pressed.</summary></member>
+    <member name="M:PerpetuumSoft.Framework.Model.MouseArguments.#ctor(System.Double,System.Double,System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,PerpetuumSoft.Framework.Model.Viewing.View)"><summary>Initializes the new instance of the <see cref="T:PerpetuumSoft.Framework.Model.MouseArguments" /> class with specified parameters. Parameters initialize the corresponding properies using a view.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.ViewFrameSplitter"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.Tool"><exclude></exclude></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Windows.Forms.MultiDocumentViewFrame"><exclude></exclude></member>
+    <member name="P:PerpetuumSoft.Framework.Model.MouseArguments.Y"><summary>Gets the y-coordinate of the mouse cursor.</summary></member>
+    <member name="T:PerpetuumSoft.Framework.Model.Viewing.ContinuedPageView"><exclude></exclude></member>
+    <member name="M:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame.#ctor"><summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Framework.Model.Windows.Forms.SimpleViewFrame" /> class.</summary></member>
+    <member name="E:PerpetuumSoft.Framework.Model.IElementCollection.ElementRemoved"><summary>Occurs after an element has been removed.</summary></member>
+  </members>
+</doc>
